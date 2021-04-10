@@ -13,11 +13,12 @@
 </head>
 <body>
 	<script>		
-		function addNumber(num1, num2){ 								
-			return num1 + num2;						
+		function addNumber(a,b=5,c=10){ 								
+			return a + b + c;						
 		}
-    var result = addNumber(2, 3);
-    document.write("두 수를 더 한 값 : " + result);
+    document.write(addNumber(5,10,20) + "<br>");
+    document.write(addNumber(5,10) + "<br>");
+    document.write(addNumber(5) + "<br>");
 	</script>	
 </body>
 </html>

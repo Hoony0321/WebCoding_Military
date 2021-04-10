@@ -18,10 +18,10 @@
 </head>
 <body>
 	<script>		
-    (function() {
-      var userName = prompt("이름을 입력하세요.");
-      document.write("안녕하세요? <span class='accent'>" + userName + "</span>님!");
-    }());
+    (function(a,b){
+        let sum = a + b;
+        document.write("함수 실행 결과 : <span style='color: red'>" + sum + "</span>");
+    }(100,200));
   </script>	
 </body>
 </html>

@@ -7,14 +7,16 @@
 </head>
 <body>
   <script>
+    let inputVal = parseInt(prompt("숫자를 입력하세요."));
     function calcSum(n) {
       let sum = 0;
       for(let i = 1; i < n + 1; i++) {						
         sum += i;	
-      }      
-      console.log(sum);
+      }
+	  return sum;
     }    
-    calcSum(10);    
+    let result = calcSum(inputVal);
+    document.write("<h2>" + "1부터 " + inputVal + "까지 더하면 " + result + "</h2>");
   </script>
 </body>
 </html>

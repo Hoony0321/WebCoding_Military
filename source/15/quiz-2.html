@@ -6,6 +6,27 @@
 	<title>연습문제 2</title>
 </head>
 <body>
-	
+    
+	<script>
+        let inputNum1 = parseInt(prompt("비교할 첫 번째 숫자를 입력하세요."));
+        let inputNum2 = parseInt(prompt("비교할 두 번째 숫자를 입력하세요."));
+
+        comapareNum(inputNum1,inputNum2);
+
+        function comapareNum(inputNum1, inputNum2){
+            if(inputNum1 === inputNum2){
+                alert("두 수가 같습니다.");
+            }
+            else{
+                if(inputNum1 > inputNum2){
+                    alert(inputNum1 + "(이)가 " + inputNum2 + "보다 큽니다.");
+                }
+                else{
+                    alert(inputNum2 + "(이)가 " + inputNum1 + "보다 큽니다.");
+                }
+            }
+        }
+
+    </script>
 </body>
 </html>
