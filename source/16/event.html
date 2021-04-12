@@ -15,4 +15,11 @@
   <body>    
     <h1>당첨자 발표</h1>
   </body>
+  <script>
+      let people = parseInt(prompt("전체 응모자 수:"));
+      document.write("전체 응모자 수 : " + people + "<br>");
+
+      let winner = Math.floor((Math.random()*people + 1));
+      document.write("당첨자 : " + winner + "번<br>");
+  </script>
 </html>
