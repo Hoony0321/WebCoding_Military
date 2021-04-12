@@ -31,7 +31,7 @@
 
       subject.value="";
 
-      var items = document.querySelectorAll("li");  // 모든 항목 가져오기
+      var items = document.getElementsByTagName("li");  // 모든 항목 가져오기
       for(i=0; i<items.length; i++) {
         items[i].addEventListener("click", function() {  // 항목 클릭했을 때 실행할 함수
           if(this.parentNode)    // 부모 노드가 있다면 

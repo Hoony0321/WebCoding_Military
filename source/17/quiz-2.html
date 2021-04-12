@@ -4,8 +4,52 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 2</title>
+    <style>
+        .input{
+            width:30px;
+            height:30px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .tableDOM{
+            border:1px solid #222;
+            border-collapse: collapse;
+        }
+        .td{
+            border: 1px solid #222;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-	
+    <label><input type="text" class = "input" id="rowInput">행</label>
+    <label><input type="text" class = "input" id="colInput">열</label>
+    <button type="submit" id = "submitBtn" style="width: 50px; height:40px;">작성</button>
+	<table id = "tableDOM"></table>
+    <script>
+        document.getElementById("submitBtn").addEventListener("click",createTable);
+        function createTable(){
+            let tableDOM = document.getElementById("tableDOM");
+            let row = parseInt(document.getElementById("rowInput").value);
+            let col = parseInt(document.getElementById("colInput").value);
+
+            for(let i = 0; i < row; i++){
+                let tdNode = document.createElement("tr");
+                for(let j = 0; j < col; j++){
+                    let trNode = document.createElement("td");
+                    trNode.style.border = "1px solid #222";
+                    trNode.style.textAlign = "center";
+                    trNode.style.width = "50px";
+                    trNode.style.height = "30px";
+                    trNode.style.margin = "0px";
+                    let txtNode = document.createTextNode(i + ", " + j);
+                    trNode.appendChild(txtNode);
+                    tdNode.appendChild(trNode);
+                }
+                tableDOM.appendChild(tdNode);
+            }
+        }
+    </script>
 </body>
+
 </html>

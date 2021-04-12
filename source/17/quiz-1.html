@@ -31,5 +31,14 @@
 		<li><span class="check">&check;</span>할 일 4 </li>
 		<li><span class="check">&check;</span>할 일 5 </li>
 	</ul>
+	<script>
+        let items = document.querySelectorAll("li");
+        for(let i = 0; i < items.length; i++){
+            items[i].addEventListener("click", function(){
+                items[i].style.color = '#ccc';
+                items[i].style.textDecoration = "line-through";
+            })
+        }
+    </script>
 </body>
 </html>

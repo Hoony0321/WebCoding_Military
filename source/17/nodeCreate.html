@@ -12,10 +12,25 @@
     <p>공부할 주제를 기록해 보세요</p>
     <form action="">
       <input type="text" id="subject" autofocus>
-      <button>추가</button>
+      <button id="addBtn" "return false">추가</button>
     </form>
     <hr>  
     <ul id="itemList"></ul>  
   </div>
+  <script>
+      
+      document.getElementById("addBtn").addEventListener("click", recording);
+      function recording(){
+		  var inputField = document.getElementById('subject');
+          var newNode = document.createElement('li');
+          var txtNode = document.createTextNode(inputField.value);
+
+          newNode.appendChild(txtNode);
+          var itemList = document.querySelector("#itemList");
+          itemList.appendChild(newNode);
+          inputField.value = "";
+      }
+  </script>
+
 </body>
 </html>

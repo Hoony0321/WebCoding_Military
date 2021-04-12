@@ -2,9 +2,42 @@
 <html lang="ko">
 <head>
   <title>DOM Tree 알아보기</title>
+	  <style>
+    #container{
+      width:500px;
+      margin:10px auto;
+      padding:20px;
+    }
+    #info {
+      margin-top:20px;
+    }
+  </style>
 </head>
-<body>  
-  <p>DOM을 공부합시다</p>
-  <img src="images/easys-3.jpg" alt="">
+<body>
+  <div id = "container">
+	<h1>DOM을 공부합시다</h1>
+	<a href='#' onclick="addP(); this.onclick='';">더 보기</a>  
+	<div id = 'info'></div>
+  </div>
+
+  <script>
+	  function addP(){
+		  let newP = document.createElement('p');
+		  let txtNode = document.createTextNode("DOM은 document object model의 줄임말입니다.");
+		  newP.appendChild(txtNode);
+		  
+		  //var newImg = document.createElement("img");
+		  let newImg = document.createElement("img");
+		  let srcNode = document.createAttribute('src');
+		  let altNode = document.createAttribute('alt');
+		  srcNode.value = "images/dom.jpg";
+		  altNode.value = "돔 트리 예제 이미지";
+		  newImg.setAttributeNode(srcNode);
+		  newImg.setAttributeNode(altNode);
+		  
+		  document.getElementById("info").appendChild(newP);
+		  document.getElementById('info').appendChild(newImg);
+	  }
+ </script>
 </body>
 </html>
