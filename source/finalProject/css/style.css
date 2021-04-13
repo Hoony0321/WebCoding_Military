@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*========== container Style ==========*/
+#container{
+    width: 1200px;
+    margin: 0 auto; /* 화면 중앙 배치*/
+}
+
+/*========== Header Style ==========*/
+header{
+    width:100%;
+    height: 100px;
+    background-color: #07c;
+}
+
+/*========== logo Style ==========*/
+#logo{
+    float : left;
+    width: 250px;
+    height: 100%;
+    line-height: 100px;
+    padding-left: 20px;
+}
+
+#logo h1{
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+}
+
+/*========== nav Style ==========*/
+nav{
+    float: right;
+    width: 900px;
+    height: 100%;
+    padding-top: 40px;
+}
+
+/*========== topMenu Style ==========*/
+#topMenu{
+    height: 60px;
+}
+
+#topMenu > li{
+    float: left;
+    position: relative;
+}
+
+#topMenu > li > a{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+
+#topMenu > li > a > span{
+    font-size: 0.5em;
+}
+
+#topMenu > li > a:hover{
+    color:#000;
+    text-shadow: 0 -1px #07c;
+}
+
+#topMenu > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255,255,255,0.6);
+    left: 20px;
+    margin: 0;
+}
+
+#topMenu > li > ul > li{
+    padding : 10px 10px 10px 30px;
+}
+
+#topMenu > li > ul > li > a{
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+
+#topMenu > li:hover > ul{
+    display: block;
+    z-index : 10;
+}
+
+#topMenu > li > ul > li > a:hover{
+    color: #f00;
+}
+z
+/*========== slideShow Style ==========*/
+#slideShow{
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    overflow: hidden; /* 영역 초과하면 감춤 */
+}
+
+/*========== contents Style ==========*/
+#contents{
+    width: 100%;
+    height: 300px;
+}
+
+/*========== tabMenu Style ==========*/
+#tebMenu{
+    float : left;
+    width: 600px;
+    height: 100%;
+    background-color: violet;
+}
+
+/*========== links Style ==========*/
+#links{
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+/*========== footer Style ==========*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
