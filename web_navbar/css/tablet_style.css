@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+.container {
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #253245;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+nav .logo i {
+  color: #c8946c;
+  font-size: 25px;
+}
+
+nav .logo a {
+  font-size: 25px;
+}
+
+.navbar .showMenuBtn {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar .showMenuBtn > i {
+  color: #c8946c;
+  font-size: 25px;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu > ul li {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.sns {
+  margin-bottom: 25px;
+}
+
+.sns button {
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+}
+
+.sns button i {
+  font-size: 18px;
+  color: white;
+}
+
+.sns button:last-child {
+  margin-right: 0px;
+}
+
+.addMenubar {
+  display: none;
+}
