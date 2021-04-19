@@ -1,10 +1,21 @@
-let showMenubarBtn = document.getElementsByClassName("showMenuBtn")[0];
-let menubar = document.getElementsByClassName("addMenubar")[0];
+let showMenuBtn = document.querySelector(".showMenuBtn");
+let menu = document.querySelector(".menu");
+let sns = document.querySelector(".sns");
 
-showMenubarBtn.addEventListener("click", showMenubar)
+showMenuBtn.addEventListener("click", showMenubar);
 
-var display_none = true;
-function showMenubar{  
-    if(display_none){menubar.style.display ="block"; display_none = false;} 
-    else {menubar.style.display="none"; display_none = true;}
+
+var menuIsVisible = true;
+function showMenubar(){  
+    if(menuIsVisible){
+        menu.style.display = 'none';
+        sns.style.display = 'none';
+        menuIsVisible = false;
+    }
+    else{
+        menu.style.display = 'block';
+        sns.style.display = 'block';
+        menuIsVisible = true;
+    }
+    
 }

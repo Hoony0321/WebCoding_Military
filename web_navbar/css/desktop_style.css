@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
 }
 
 a {
+  font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -45,8 +47,9 @@ nav .navbar .showMenuBtn {
   display: none;
 }
 
-.addMenubar {
-  display: flex;
+.menu {
+  width: 50%;
+  display: block;
 }
 
 .menu > ul {
@@ -56,6 +59,11 @@ nav .navbar .showMenuBtn {
 
 .menu > ul li {
   font-size: 18px;
+  margin-right: 15px;
+}
+
+.sns {
+  display: block;
 }
 
 .sns button {

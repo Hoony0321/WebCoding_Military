@@ -7,6 +7,7 @@
 a {
   text-decoration: none;
   color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 li {
@@ -90,8 +91,4 @@ nav .logo a {
 
 .sns button:last-child {
   margin-right: 0px;
-}
-
-.addMenubar {
-  display: none;
 }
