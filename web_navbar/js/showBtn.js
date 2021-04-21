@@ -1,21 +1,9 @@
-let showMenuBtn = document.querySelector(".showMenuBtn");
-let menu = document.querySelector(".menu");
-let sns = document.querySelector(".sns");
-
-showMenuBtn.addEventListener("click", showMenubar);
+const menubar = document.querySelector(".menubar");
+const snsLink = document.querySelector(".snsLink");
+const hamburger = document.querySelector(".hamburger");
 
 
-var menuIsVisible = true;
-function showMenubar(){  
-    if(menuIsVisible){
-        menu.style.display = 'none';
-        sns.style.display = 'none';
-        menuIsVisible = false;
-    }
-    else{
-        menu.style.display = 'block';
-        sns.style.display = 'block';
-        menuIsVisible = true;
-    }
-    
-}
+hamburger.addEventListener("click", () => {
+    menubar.classList.toggle("active");
+    snsLink.classList.toggle("active");
+});

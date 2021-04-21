@@ -2,41 +2,36 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reponsive Header</title>
-
-    <link rel="stylesheet" media="screen and (max-width:1023px)" href="css/tablet_style.css">
-    <link rel="stylesheet" media="screen and (min-width:1024px)" href="css/desktop_style.css">
+    <title>Reponsive Navbar</title>
     <script src="https://kit.fontawesome.com/d040bc7e91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <Header>
             <nav>
-                <div class="navbar">
-                    <div class="logo">
-                        <i class="fab fa-accusoft"></i>
-                        <a href="#">DreamCoding</a>
-                    </div>
-                    <button class="showMenuBtn">
-                        <i class="fas fa-bars"></i>
-                    </button>
+                <div class="logo">
+                    <i class="fab fa-accusoft"></i>
+                    <a href="#">DreamCoding</a>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Galley</a></li>
-                        <li><a href="#">Weddings</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Bookings</a></li>
-                    </ul>
-                </div>
-                <div class="sns">
-                    <button><i class="fab fa-facebook-f"></i></button>
-                    <button><i class="fab fa-twitter"></i></button>
-                </div>
+                <ul class="menubar">
+                    <li class="menuListItem"><a href="#">Home</a></li>
+                    <li class="menuListItem"><a href="#">Gallery</a></li>
+                    <li class="menuListItem"><a href="#">Weddings</a></li>
+                    <li class="menuListItem"><a href="#">FAQ</a></li>
+                    <li class="menuListItem"><a href="#">Bookings</a></li>
+                </ul>
+                <ul class="snsLink">
+                    <li><button><i class="fab fa-facebook-f"></i></button></li>
+                    <li><button><i class="fab fa-twitter"></i></button></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
-        </header>
+        </Header>
     </div>
     <script src="js/showBtn.js"></script>
 </body>

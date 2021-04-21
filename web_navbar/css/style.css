@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+  /*Color*/
+  --white-color: #d8e2ec;
+  --accent-cololr: #d59663;
+  --dark-color: #253245;
+  --pink-color: #f1e2e6;
+  /* Size */
+  --side-padding: 12px;
+  --topbottom-padding: 12px;
+
+  /* Font Size */
+  --font-large: 24px;
+  --font-medium: 18px;
+  --font-small: 14px;
+
+  /* Font-Fmaily */
+  --fontFamily-basic: "Source Sans Pro", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: var(--fontFamily-basic);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger {
+  display: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pink-color);
+}
+
+/*--------------------- ----------*/
+/*---------- logo style ----------*/
+/*--------------------- ----------*/
+nav {
+  width: 100%;
+  background-color: var(--dark-color);
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--topbottom-padding) var(--side-padding);
+}
+
+nav .logo {
+  padding: var(--topbottom-padding) var(--side-padding);
+}
+
+nav .logo i {
+  font-size: var(--font-large);
+  color: var(--accent-cololr);
+}
+
+nav .logo a {
+  font-size: var(--font-large);
+}
+
+/*--------------------- ----------*/
+/*---------- menu style ----------*/
+/*--------------------- ----------*/
+.menubar {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.menubar li {
+  padding: var(--topbottom-padding) var(--side-padding);
+}
+
+.menubar li > a {
+  font-size: var(--font-small);
+}
+
+.menubar li:hover {
+  background-color: var(--accent-cololr);
+  border-radius: 4px;
+}
+
+/*------------------------------------*/
+/*---------- snsLinke style ----------*/
+/*------------------------------------*/
+
+.snsLink {
+  display: flex;
+}
+
+.snsLink li {
+  padding: var(--topbottom-padding) var(--side-padding);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menubar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .menubar li {
+    text-align: center;
+  }
+
+  .snsLink {
+    display: none;
+    align-self: center;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+  }
+
+  .hamburger i {
+    color: var(--accent-cololr);
+    font-size: var(--font-large);
+  }
+
+  .menubar.active,
+  .snsLink.active {
+    display: block;
+  }
+}
