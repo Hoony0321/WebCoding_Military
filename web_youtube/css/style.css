@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  /* Color */
+  --black-color: #140a00;
+  --red-color: #f00;
+  --white-color: #ffffff;
+  --gray-dark-color: #909090;
+  --gary-light-color: #e0e0e0;
+  --blue-color: #045fd4;
+
+  /* Size */
+  --side-large-padding: 18px;
+  --side-padding: 12px;
+  --side-small-padding: 6px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 20px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+
+  /* Font Family */
+  --font-family-basic: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-basic);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ================================== */
+/* ========== Header Style ========== */
+/* ================================== */
+
+header {
+  background-color: black;
+  display: flex;
+  padding: var(--side-padding);
+  justify-content: space-between;
+  font-size: var(--font-large);
+}
+
+header .logo > i {
+  color: var(--red-color);
+}
+
+header .logo > a {
+  color: var(--white-color);
+}
+
+header .buttons button {
+  color: var(--white-color);
+}
+
+header .buttons .searchBtn {
+  margin-right: var(--side-padding);
+}
+
+/* ================================= */
+/* ========== Video Style ========== */
+/* ================================= */
+
+.video {
+  width: 100%;
+  background-color: var(--black-color);
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+}
+
+/* ====================================== */
+/* ========== Video Info Style ========== */
+/* ====================================== */
+
+.videoInfo {
+  padding: var(--side-padding);
+}
+
+.videoInfo .hashTag {
+  display: flex;
+  font-size: var(--font-medium);
+  color: var(--blue-color);
+}
+
+.videoInfo .hashTag > li {
+  margin-left: var(--side-padding);
+}
+
+.videoInfo .hashTag > li:first-child {
+  margin-left: 0;
+}
+
+.videoInfo .title {
+  display: flex;
+}
+
+.videoInfo .viewerInfo {
+  color: var(--gary-dark-color);
+  font-size: var(--font-small);
+}
+
+.videoButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: var(--side-padding);
+}
+
+.videoButtons li {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-medium);
+}
+
+.videoButtons .thumbUp i {
+  color: var(--blue-color);
+}
+
+/* ========================================= */
+/* ========== Youtuber Info Style ========== */
+/* ========================================= */
+
+.youtuberInfo {
+  padding: var(--side-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.youtuberInfo .info img {
+  width: var(--avatar-size);
+  height: 100%;
+  border-radius: 50%;
+}
+
+.youtuberInfo .info {
+  display: flex;
+}
+
+.youtuberInfo .info > ul {
+  margin-left: var(--side-large-padding);
+}
+
+.youtuberInfo .info > ul li {
+  font-size: var(--font-medium);
+}
+
+.youtuberInfo .info > ul .subscribe {
+  color: var(--gray-dark-color);
+  font-size: var(--font-small);
+}
+
+.youtuberInfo .subscribeBtn {
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+
+/* =================================== */
+/* ========== UpNext  Style ========== */
+/* =================================== */
+
+.upNext {
+  padding: var(--side-padding);
+}
+
+.upNext .nextVideos .videoItem {
+  display: flex;
+  margin-top: var(--side-padding);
+}
+
+.upNext .nextVideos .videoItem .img {
+  flex-basis: 35%;
+  margin-right: var(--side-large-padding);
+}
+
+.upNext .nextVideos .videoItem .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.upNext .nextVideos .videoItem .metadata {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .nextVideos .videoItem button {
+  flex-basis: 5%;
+}
