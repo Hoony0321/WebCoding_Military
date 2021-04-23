@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+:root {
+  /* Color */
+  --white-color: #ffffff;
+  --black-color: #343a40;
+  --black-light-color: #222426;
+  --green-color: #56a68c;
+  --gray-color: #b3b4b4;
+  --gray-light-color: #f1f3f5;
+
+  /* Size */
+  --space-max: 40px;
+  --space-Xlarge: 32px;
+  --space-large: 24px;
+  --space-medium: 12px;
+  --space-small: 9px;
+  --space-micro: 6px;
+
+  /* Font Size */
+  --font-title: 52px;
+  --font-small-title: 42px;
+  --font-Xlarge: 32px;
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 16px;
+
+  /* Font Family */
+  --fontFamily-basic: "Nanum Gothic", sans-serif;
+  --fontFamily-title: "Black Han Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily-basic);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ===================================== */
+/* ========== Container Style ========== */
+/* ===================================== */
+
+.container {
+  width: 100vw;
+}
+
+/* ================================== */
+/* ========== Header Style ========== */
+/* ================================== */
+
+header {
+  font-family: var(--fontFamily-title);
+  font-weight: 900;
+}
+
+/* =============================== */
+/* ========== Nav Style ========== */
+/* =============================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-large);
+  align-items: center;
+
+  /* add the code later */
+  /* position: sticky; top: 0; */
+}
+
+nav > .logo > i {
+  font-size: var(--font-Xlarge);
+  margin-right: var(--space-small);
+}
+
+nav > .logo > a {
+  font-size: var(--font-large);
+}
+
+nav > .buttons button {
+  font-size: var(--font-large);
+}
+
+nav > .buttons .searchBtn {
+  margin-right: var(--space-small);
+}
+
+nav > .buttons .loginBtn {
+  font-size: var(--font-medium);
+  border-radius: 1rem;
+  border: 1px solid var(--black-color);
+  padding: 5px 20px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+/* =============================== */
+/* ========== Head Style ========= */
+/* =============================== */
+
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-large);
+  padding: var(--space-large);
+}
+
+.head .title {
+  font-size: var(--font-large);
+}
+.head .metadata {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-max);
+}
+
+.head .metadata .info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+}
+
+.head .metadata .info > button {
+  color: var(--gray-color);
+  border-radius: 1rem;
+  border: 1px solid var(--gray-color);
+  text-align: center;
+  padding: var(--space-small) var(--space-medium);
+}
+
+.head .metadata .info > button > i {
+  margin-right: 10px;
+}
+
+.head .hashtag button {
+  font-size: var(--font-small);
+  border-radius: 1rem;
+  background-color: var(--gray-light-color);
+  padding: var(--space-small) var(--space-medium);
+  color: var(--green-color);
+}
